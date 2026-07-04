@@ -1,0 +1,23 @@
+{% extends 'Students/base.html' %}
+{% block body %}
+
+    <div class="row justify-content-center">
+        <div class="col-6">
+            <div class="card bg-light mb-3">
+                <div class="card-header">
+                    <i class="fa-solid fa-list fa-lg"></i> All Students
+                </div>
+                <div class="card-body">
+                    {% for student in students %}
+                    <ul style="list-style: none;">
+                        <li>{{student.first_name}} {{student.last_name}}</li>
+                    </ul>
+                    {% endfor %}
+                        
+                    <a href="{% url 'index' %}" class="btn btn-primary">Close</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+{% endblock %}
