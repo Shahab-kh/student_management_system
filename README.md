@@ -40,7 +40,7 @@ Each student record includes:
 1. Clone the repository:
 
 ```bash
-git clone https://github.com/YOUR_USERNAME/student_management_system.git
+git clone https://github.com/Shahab-kh/student_management_system.git
 ```
 
 2. Navigate to the project directory:
